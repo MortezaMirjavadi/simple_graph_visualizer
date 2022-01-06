@@ -1,0 +1,104 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/*.graph .labels.x-labels {*/
+    /*text-anchor: middle;*/
+/*}*/
+
+/*.graph .labels.y-labels {*/
+    /*text-anchor: end;*/
+/*}*/
+
+.graph {
+    height: 500px;
+    width: 800px;
+}
+
+.line {
+    stroke: #ccc;
+    stroke-dasharray: 0;
+    stroke-width: 2;
+}
+
+.labels {
+    font-size: 13px;
+    z-index: 99;
+    fill: white;
+    cursor: default;
+    user-select: none;
+}
+
+.label-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    fill: darkkhaki;
+}
+
+.node {
+    fill: #00b894;
+    stroke-width: 1;
+    z-index: 98;
+}
+
+.container {
+    width: fit-content;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.node:hover {
+    fill: #55efc4;
+    cursor: pointer;
+}
+
+.labels:hover .node {
+    fill: #55efc4 !important;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.input-container {
+    margin-right: 10px;
+}
+
+.input {
+    width: 250px;
+    height: 483px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin: 16px 0 !important;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: #e7e7e7;
+}
+
+.button:hover {
+    background-color: #e7e7e7; /* Green */
+    color: black;
+}
